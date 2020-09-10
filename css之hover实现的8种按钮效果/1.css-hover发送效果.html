@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.css-hover发送效果</title>
+    <style>
+        #send-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        button {
+            background: #5f55af;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px 30px 10px 20px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        button svg {
+            display: inline-block;
+            vertical-align: middle;
+            padding-right: 5px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        button:hover svg {
+            animation: fly 2s ease 1;
+        }
+        
+        @keyframes fly {
+            0% {
+                transform: translateX(0%);
+            }
+            50% {
+                transform: translateX(300%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="send-btn">
+        <button>
+            <svg t="1599720728344" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2488" width="200" height="200"><path d="M899.6 117c9.9 7.1 13.8 16.7 12 28.5L797.3 831.2c-1.5 8.6-6.3 15.3-14.3 20.1-4.1 2.3-8.8 3.6-13.8 3.6-3.3 0-6.9-0.8-10.7-2.3L556.3 770 448.2 901.8c-5.4 6.9-12.7 10.2-21.9 10.2-3.8 0-7.1-0.6-9.9-1.8-5.6-2.1-10.2-5.5-13.6-10.5-3.4-4.9-5.2-10.3-5.2-16.3V727.7l385.7-472.8-477.2 413-176.3-72.3c-11-4.1-17-12.3-17.8-24.6-0.6-11.9 4.1-20.7 14.3-26.4L869.1 116c4.5-2.7 9.2-4 14.3-4 6 0 11.4 1.7 16.2 5z" p-id="2489" fill="#ffffff"></path></svg>
+            Send
+        </button>
+    </div>
+</body>
+
+</html>
