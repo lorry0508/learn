@@ -1,0 +1,1 @@
+原理就是监听页面滚动事件，分析clientHeight、scrollTop、scrollHeight三者的属性关系。
